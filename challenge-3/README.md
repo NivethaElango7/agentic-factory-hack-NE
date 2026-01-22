@@ -475,6 +475,7 @@ Finally, in [Task 3](#task-3-azure-ai-tracing--observability) we used **Azure AI
 
 <img src="./images/challenge-3-task-3.png" alt="Task 3" width="50%">
 
+---
 
 If you want to expand your knowledge on what we’ve covered in this challenge, have a look at the content below:
 
@@ -484,4 +485,5 @@ If you want to expand your knowledge on what we’ve covered in this challenge, 
 - [Cosmos DB Best Practices](https://learn.microsoft.com/azure/cosmos-db/nosql/best-practice-dotnet)
 
 ---
+
 **Next step:** [Challenge 4](../challenge-4/README.md) - Multi-Agent Orchestration

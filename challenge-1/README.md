@@ -532,6 +532,8 @@ Finally, in [Task 3](#task-3-understand-root-cause-with-fault-diagnosis-agent-an
 
 This agent also runs fully in **Agent Service** and can use the tools when answering questions in the playground. Note that the content from **Blob Storage** isn't fetched on demand — instead, it's indexed ahead of time, and retrieval queries are executed against **AI Search**.
 
+---
+
 If you want to expand your knowledge on what we’ve covered in this challenge, have a look at the content below:
 
 - [Connect to **Model Context Protocol** servers](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/model-context-protocol?view=foundry&pivots=python)

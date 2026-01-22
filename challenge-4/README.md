@@ -288,12 +288,16 @@ In this challenge we used **Aspire** as the workflow host, which provides compre
 
 DevUI is ideal when you're focused on debugging a single agent or workflow and don't need the full distributed tracing and service orchestration that Aspire provides.
 
+---
+
 If you want to expand your knowledge on what we've covered in this challenge, have a look at the content below:
 
 - [What is .NET Aspire?](https://aspire.dev/get-started/what-is-aspire/)
 - [Agent-to-Agent in Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/agent-to-agent?view=foundry&pivots=python)
 - [Agent-to-Agent API in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/agent-to-agent-api)
 - [DevUI for Agent Framework](https://learn.microsoft.com/en-us/agent-framework/user-guide/devui/?pivots=programming-language-csharp)
+
+---
 
 You've now completed the final challenge of the Factory maintenance multi-agent workflow workshop. You have a complete, end-to-end agentic system that combines:
 

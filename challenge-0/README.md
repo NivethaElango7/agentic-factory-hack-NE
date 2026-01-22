@@ -414,6 +414,8 @@ Time to build some intelligent agents!
 > - Azure Key Vault for secrets management
 > - RBAC for fine-grained access control
 
+---
+
 If you want to learn more about what you covered in this challenge, check out the links below:
 
 - [Get started with Azure CLI](https://learn.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)

@@ -187,6 +187,8 @@ Solution or explanation here.
 
 Key takeaways or reflection points.
 
+---
+
 If you want to expand your knowledge on what we've covered in this challenge, have a look at the content below:
 
 - [Link title](url)

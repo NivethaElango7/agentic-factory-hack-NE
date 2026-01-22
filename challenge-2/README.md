@@ -387,6 +387,30 @@ Add structured output using `AIJsonUtilities.CreateJsonSchema`
 and `ChatResponseFormat.ForJsonSchema` for type-safe responses
 ```
 
+### Create your own custom GitHub Copilot agent
+
+In this challenge you used the `agentplanning` agent—a custom **GitHub Copilot** agent defined in `.github/agents/agentplanning.agent.md`. Try creating your own custom agent with a specific persona!
+
+1. Create a new file in `.github/agents/` with a `.agent.md` extension
+2. Define the agent's persona, instructions, and any tools it should use
+3. Test it by selecting your new agent from the *Agents* dropdown in **GitHub Copilot Chat**
+
+Here are two agent personas that would be useful in this hackathon:
+
+**🧪 Agent Test Generator** (`agenttester.agent.md`)
+- Persona: A test-driven development specialist for AI agents
+- Purpose: Helps write unit tests, integration tests, and mock data for agent workflows
+- Knowledge: xUnit/NUnit patterns, mocking **Cosmos DB** responses, testing async code, agent input/output validation
+- Example prompt to handle: "Write unit tests for the CosmosDbService that mock the container responses"
+
+**🗄️ Cosmos DB Helper** (`cosmoshelper.agent.md`)
+- Persona: A database specialist focused on **Cosmos DB** best practices
+- Purpose: Helps write efficient queries, design partition keys, and troubleshoot data access
+- Knowledge: SQL API queries, indexing strategies, cross-partition queries, cost optimization
+- Example prompt to handle: "Write a query to find all technicians with bearing_replacement skill who are available"
+
+See [Custom agents in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-agents) for detailed documentation on creating custom agents.
+
 ## 🛠️ Troubleshooting and FAQ
 
 <details>
@@ -478,12 +502,45 @@ The diagram above illustrates how **GitHub Copilot** combines multiple inputs to
 
 ❹ **Tools and data (MCP)** — Copilot can be equipped with additional tools exposed via the Model Context Protocol (MCP) to accomplish more complex tasks. **This is very similar to how our agents in [challenge 1](../challenge-1/README.md) were equipped with tools** — just as we gave the **Fault Diagnosis Agent** access to **Cosmos DB** queries and a knowledge base, you can extend Copilot with external data sources and capabilities.
 
+### Taking it further with Spec Kit
 
-If you want to expand your knowledge on what we’ve covered in this challenge, have a look at the content below:
+In this challenge, you used custom instructions and a guided agent to build a single component. But what happens when you need to build entire features or complete applications with AI assistance?
+
+[**Spec Kit**](https://github.com/github/spec-kit) is an open-source toolkit that takes AI-assisted development to the next level through **Spec-Driven Development (SDD)**. Instead of generating code directly from prompts, SDD flips the traditional approach: **specifications become executable**, directly generating working implementations rather than just guiding them.
+
+**Why this matters for larger projects:**
+
+| Traditional approach | Spec-Driven Development |
+|---------------------|------------------------|
+| Code is the source of truth | Specifications are the source of truth |
+| Specs drift from implementation | Specs generate implementation |
+| One-shot prompt → code | Multi-step: specify → plan → tasks → implement |
+| Hard to review AI output | Structured artifacts at each stage |
+
+**Spec Kit provides slash commands** that structure AI-assisted development:
+
+- `/speckit.constitution` — Establish project principles and architectural guidelines
+- `/speckit.specify` — Create functional specifications (focus on *what* and *why*, not *how*)
+- `/speckit.plan` — Generate technical implementation plans with your chosen tech stack
+- `/speckit.tasks` — Break down into actionable, parallelizable tasks
+- `/speckit.implement` — Execute tasks according to the plan
+
+**The key insight**: Specifications become living documents that generate code, tests, and documentation—rather than artifacts that are written once and ignored. When requirements change, you update the spec and regenerate, maintaining alignment between intent and implementation.
+
+This approach is particularly valuable when:
+- Building complete features or applications (not just single files)
+- Working on teams where specifications need review and approval
+- Maintaining long-lived projects where requirements evolve
+- Wanting reproducible, auditable AI-assisted development
+
+---
+
+If you want to expand your knowledge on what we've covered in this challenge, have a look at the content below:
 
 - [Custom agents in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-agents)
 - [Custom instructions in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
-- [Spec-driven development (Spec Kit)](https://developer.microsoft.com/blog/spec-driven-development-spec-kit)
+- [Spec Kit on GitHub](https://github.com/github/spec-kit)
+- [Spec-Driven Development blog post](https://developer.microsoft.com/blog/spec-driven-development-spec-kit)
 
 ---
 
