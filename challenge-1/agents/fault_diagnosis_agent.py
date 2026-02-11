@@ -76,9 +76,9 @@ Grounding rules (IMPORTANT):
                         server_url=machine_wiki_mcp_endpoint,
                         require_approval="never",
                         project_connection_id="machine-wiki-connection"
-                    ),
+                    )
 
-                ]
+                     ]
 
             ))
         print(f"✅ Created Fault Diagnosis Agent: {agent.id}")
